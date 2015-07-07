@@ -1,6 +1,6 @@
 # Makefile for Sphinx documentation
 #
-
+.DEFAULT_GOAL = dirhtml
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
