@@ -4,10 +4,12 @@
 Schedule
 *****************************************
 
+.. role:: strike
+
 Schedule
 ========
 
-- 2015/07/07: scheduling-1
+- :strike:`2015/07/07: scheduling-1` (2015/07/07 done)
 - 2015/07/08: create requirement list
 - 2015/07/09: scheduling-2
 - 2015/07/10: create specified requirements
