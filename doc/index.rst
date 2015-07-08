@@ -11,7 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   process
    schedule
+   startup
 
 Indices and tables
 ==================
