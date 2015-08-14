@@ -1,3 +1,0 @@
-[submodule "vendor/my-mind"]
-	path = vendor/my-mind
-	url = https://github.com/ondras/my-mind.git
