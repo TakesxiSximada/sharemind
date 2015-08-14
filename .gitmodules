@@ -1,0 +1,3 @@
+[submodule "lib/my-mind"]
+	path = lib/my-mind
+	url = git@github.com:ondras/my-mind.git
