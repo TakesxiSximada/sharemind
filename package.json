@@ -1,0 +1,22 @@
+{
+  "name": "sharemind",
+  "version": "1.0.0",
+  "description": "[![Circle CI](https://circleci.com/gh/TakesxiSximada/sharemind/tree/master.svg?style=svg)](https://circleci.com/gh/TakesxiSximada/sharemind/tree/master)",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakesxiSximada/sharemind.git"
+  },
+  "author": "TakesxiSximada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakesxiSximada/sharemind/issues"
+  },
+  "homepage": "https://github.com/TakesxiSximada/sharemind"
+}

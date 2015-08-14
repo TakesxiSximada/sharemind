@@ -5,11 +5,13 @@ import argparse
 from tornado.web import (
     Application,
     RequestHandler,
+    StaticFileHandler,
     )
-from tornado.websocket import WebSocketHandler
+from tornado.websocket import (
+    WebSocketHandler,
+    )
 from tornado.ioloop import IOLoop
-from sandstorm.handlers import YAStaticFileHandler
-from sandstorm.config import Configurator
+# from sandstorm.handlers import YAStaticFileHandler
 
 
 class MainHandler(RequestHandler):
@@ -27,16 +29,13 @@ def includeme(config, prefix):
 
 def main(argv=sys.argv[1:]):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--host', default='localhost')
+    parser.add_argument('--host', default='127.0.0.1')
     parser.add_argument('--port', default=8080, type=int)
     args = parser.parse_args(argv)
 
-    config = Configurator()
-    config.include('.')
-
     app = Application([
-        (r'/', YAStaticFileHandler()),
-    ])
+        (r'/', StaticFileHandler, {'path': 'www'}),
+    ], **{'debug': True, 'route_prefix': ''})
     app.listen(args.port)
     loop = IOLoop.instance()
     loop.start()
